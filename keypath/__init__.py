@@ -18,7 +18,7 @@ def value_at_keypath(obj, keypath):
     elif type(obj) in [tuple, list]:
       obj = obj[int(part)]
     else:
-      obj = obj.getattr(part, {})
+      obj = getattr(obj, part, {})
   return obj
 
 
@@ -42,7 +42,7 @@ def set_value_at_keypath(obj, keypath, val):
     elif type(obj) in [tuple, list]:
       obj = obj[int(part)]
     else:
-      obj = obj.getattr(part)
+      obj = getattr(obj, part)
   last_part = parts[-1]
   if isinstance(obj, dict):
     obj[last_part] = val

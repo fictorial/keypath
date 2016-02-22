@@ -8,7 +8,7 @@ with open('LICENSE') as f:
 
 setup(
   name='keypath',
-  version='0.0.1',
+  version='0.0.2',
   description='Get/set values at a key path in a dict/object',
   long_description=readme,
   author='Brian Hammond',
