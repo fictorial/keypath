@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-with open('README.md') as f:
+with open('README.rst') as f:
   readme = f.read()
 
 with open('LICENSE') as f:
@@ -8,7 +8,7 @@ with open('LICENSE') as f:
 
 setup(
   name='keypath',
-  version='0.0.2',
+  version='0.0.4',
   description='Get/set values at a key path in a dict/object',
   long_description=readme,
   author='Brian Hammond',
